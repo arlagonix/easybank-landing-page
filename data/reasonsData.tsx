@@ -27,7 +27,7 @@ export const reasonsData: ReasonType[] = [
       "We don't do branches. Open your account in minutes online and start taking control of your finances right away.",
   },
   {
-    imageSrc: "/openAPI.svg",
+    imageSrc: "/openApi.svg",
     name: "Open API",
     description:
       "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
