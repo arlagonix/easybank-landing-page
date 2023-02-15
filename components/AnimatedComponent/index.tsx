@@ -30,15 +30,20 @@ export default function AnimatedComponent({
   ...otherProps
 }: AnimatedComponentProps) {
   const animatedRef = useRef(null);
+  const animationHappened = useRef(false);
   const isVisible = useOnScreen(animatedRef);
+
   useEffect(() => {
-    const animation = anime({
+    if (animationHappened.current) return;
+
+    const animationOnVisible = anime({
       targets: animatedRef.current,
       ...animeParams,
     });
 
     if (isVisible) {
-      animation.restart();
+      animationOnVisible.play();
+      animationHappened.current = true;
     }
   }, [isVisible]);
   return (
