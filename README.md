@@ -160,6 +160,10 @@ Figma prototype: https://www.figma.com/file/tnMVDIPtXmz1Jl3LHMxhEX/Easy-Bank-Lan
     <td><code>animejs</code></td>
     <td>Library for animations</td>
   </tr>
+  <tr>
+    <td><code>@storybook/...</code></td>
+    <td>Development environment for UI components</td>
+  </tr>
 </table>
 
 ## 💡 Details
