@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="../../actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/arlagonix/easybank-landing-page/main.yaml"></a>
+  <a href="../../actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/deployments/arlagonix/easybank-landing-page/production?label=vercel&logo=vercel&logoColor=white"></a>
   <a href="../../commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arlagonix/easybank-landing-page"></a>
   <a href="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/arlagonix/easybank-landing-page"></a>
   <img src="https://badgen.net/github/dependabot/arlagonix/easybank-landing-page" />
