@@ -166,18 +166,22 @@ Figma prototype: https://www.figma.com/file/tnMVDIPtXmz1Jl3LHMxhEX/Easy-Bank-Lan
 
 Thought project is extremely simple I spent much time learning NextJS, AnimeJS.
 
-Btw, that's my first project on NextJS.
+Btw, that's my first project on NextJS. 
+
+Previous projects were usually bootstrapped with Vite. I couldn't make Vite and Storybook work together. Although, I managed to make NextJS and Storybook work together. Finally!
 
 Features
 
 - NextJS!
-- Nice animations
+- Storybook
+- Nice animations with Animejs
 - Deployment to Vercel
 
 ## 🔗 Useful resources
 
 - [NextJS Foundations](https://nextjs.org/learn/foundations/about-nextjs) - Introduction to NextJS
-- [AnimeJS](https://animejs.com/) - AnimeJS Official documentation
+- [AnimeJS](https://animejs.com/) - AnimeJS official documentation
+- [Storybook](https://storybook.js.org/) - Storybook official documentation
 - [Web Dev Simplified Hooks Course](https://courses.webdevsimplified.com/view/courses/react-hooks-simplified/1411296-introduction/4376388-00-introduction) - Great course with a lot of custom hooks
 
 ## 👤 Author
