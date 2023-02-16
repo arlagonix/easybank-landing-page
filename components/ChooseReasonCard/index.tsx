@@ -30,5 +30,6 @@ const ChooseReasonCard = forwardRef<any, ChooseReasonProps>(
     );
   }
 );
+ChooseReasonCard.displayName = "ChooseReasonCard";
 
 export default ChooseReasonCard;

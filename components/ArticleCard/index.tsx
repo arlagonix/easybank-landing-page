@@ -34,5 +34,6 @@ const ArticleCard = forwardRef<any, ArticleCardProps>(
     );
   }
 );
+ArticleCard.displayName = "ArticleCard";
 
 export default ArticleCard;

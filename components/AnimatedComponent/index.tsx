@@ -45,7 +45,7 @@ export default function AnimatedComponent({
       animationOnVisible.play();
       animationHappened.current = true;
     }
-  }, [isVisible]);
+  }, [isVisible, animeParams]);
   return (
     <Tag ref={animatedRef} {...otherProps}>
       {children}

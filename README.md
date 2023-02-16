@@ -61,8 +61,7 @@ Figma prototype: https://www.figma.com/file/tnMVDIPtXmz1Jl3LHMxhEX/Easy-Bank-Lan
   - ReactJS
   - NextJS
 - **NodeJS**
-- **Github Pages**
-- **Github Actions** for CI/CD
+- **Vercel**
 - **Storybook**
 
 ## 🔨 Build project
@@ -78,27 +77,27 @@ Figma prototype: https://www.figma.com/file/tnMVDIPtXmz1Jl3LHMxhEX/Easy-Bank-Lan
   </tr>
   <tr>
     <td><code>npm&nbsp;run&nbsp;dev</code></td>
-    <td>Starts a local web server with HMR (Hot Module Replacement) for development</td>
+    <td>Run the app in development mode</td>
   </tr>
   <tr>
     <td><code>npm&nbsp;run&nbsp;build</code></td>
-    <td>Builds the project, and outputs to the <code>./build</code> folder</td>
+    <td>Build the app</td>
   </tr>
   <tr>
-    <td><code>npm&nbsp;run&nbsp;preview</code></td>
-    <td>Start a local web server that serves the built solution from <code>./build</code> for previewing</td>
+    <td><code>npm&nbsp;run&nbsp;start</code></td>
+    <td>Run the app in production mode. Use after <code>npm run build</code></td>
   </tr>
   <tr>
-    <td><code>npm&nbsp;run&nbsp;test:e2e</code></td>
-    <td>Open application that allows to run 2e2 tests</td>
+    <td><code>npm&nbsp;run&nbsp;storybook</code></td>
+    <td>Run storybook (developmen environment for UI components)</td>
   </tr>
   <tr>
-    <td><code>npm&nbsp;run&nbsp;test:unit</code></td>
-    <td>Runs unit tests</td>
+    <td><code>npm&nbsp;run&nbsp;build-storybook</code></td>
+    <td>Build Storybook as a static web application</td>
   </tr>
   <tr>
     <td><code>npm&nbsp;run&nbsp;lint</code></td>
-    <td>Check that code conforms to Eslint</td>
+    <td>Check compliance with Eslint rules</td>
   </tr>
 </table>
 
@@ -106,47 +105,48 @@ Figma prototype: https://www.figma.com/file/tnMVDIPtXmz1Jl3LHMxhEX/Easy-Bank-Lan
 
 ```Markdown
 ├── 📁 .github
-|   ├── 📁 workflows
-|   |   └── 📝 main.yaml      CI/CD instructions for Github Actions
 │   └── 📝 dependabot.yml     Instructions for Dependabot
 |
-├── 📁 cypress                End-to-end tests
+├── 📁 .storybook             Settings for Storybook
+|
+├── 📁 components                     React components
+|   └── 📁 Component Name
+|       ├── 📝 index.tsx          Component logic
+|       ├── 📝 index.styled.tsx   Component styles
+|       ├── 📝 index.stories.tsx  Storybook instructions (optional)
+|       └── 📝 index.types.tsx    Component types (optional)
+|
+├── 📁 data                   Data for some sections of the page
 │
 ├── 📁 docs                   Additional information, documentation
 │   └── 📁 results            Screenshots of how the application works after being fully developed
 |
-├── 📁 src                            Source files needed for application development
-│   ├── 📁 assets                     Static assets: images, icons, favicons
-│   ├── 📁 components                 React components
-|   |   └── 📁 Component Name
-|   |       ├── 📝 index.tsx          Component logic
-|   |       ├── 📝 index.styled.tsx   Component styles
-|   |       └── 📝 index.types.tsx    Component types (optional)
-│   ├── 📁 global                     Global styles
-│   ├── 📁 hooks                      Custom React hooks
-│   ├── 📁 pages                      React page components
-|   |   └── 📁 Page Name
-|   |       ├── 📝 index.tsx          Page logic
-|   |       ├── 📝 index.styled.tsx   Page styles
-|   |       └── 📝 index.types.tsx    Page types (optional)
-│   ├── 📁 utils                      Utility functions
-│   ├── 📝 App.tsx                    App React component
-│   ├── 📝 index.html                 Main html file
-│   ├── 📝 index.tsx                  Entry point for the module bundler
-│   ├── 📝 styled.d.ts                Types for Styled Components theme
-│   ├── 📝 styles.css                 Styles for the loader displayed until JS is loaded
-│   └── 📝 vite-end.d.ts              Some Typescript stuff for Vite
+├── 📁 global                 Global styles (styled-components)
+|
+├── 📁 hooks                  Custom React hooks
+|
+├── 📁 pages                      React page components
+|   ├── 📝 _app.page.tsx          Global settings for the main page
+|   ├── 📝 _document.page.tsx     Instructions for making styled-components work properly, for fonts
+|   ├── 📝 index.page.tsx     Main page logic
+|   └── 📝 index.styled.tsx   Page styles
+|
+├── 📁 public                     Static assets: images, icons, favicons
+|
+├── 📁 stories                    Storybook stories
+|
+├── 📁 utils                      Utility functions
 |
 ├── 📝 .eslintrc.json         ESLint configuration file
 ├── 📝 .gitignore             Instructions for Git about what files to ignore
+├── 📝 .npmrc                 Instructions for NPM (for Storybook to wrok properly)
 ├── 📝 LICENSE                MIT License. Basically you can do whatever you want with the code
 ├── 📝 README.md              Project description
-├── 📝 cypress.config.cjs     Cypress configuration file
+├── 📝 next.config.js         NextJS configuration file
 ├── 📝 package-lock.json      Keeps track of the exact version of every package that is installed
 ├── 📝 package.json           Various metadata relevant to the project, scripts, dependencies
-├── 📝 tsconfig.json          TypeScript configuration file
-├── 📝 tsconfig.node.json     TypeScript configuration file for Vite
-└── 📝 vite.config.js         Vite configuration file
+├── 📝 styled.d.ts            Types for styled-components
+└── 📝 tsconfig.json          TypeScript configuration file
 ```
 
 ## 📦 NPM Packages worth mentioning
@@ -157,62 +157,28 @@ Figma prototype: https://www.figma.com/file/tnMVDIPtXmz1Jl3LHMxhEX/Easy-Bank-Lan
     <td>For CSS-in-JS</td>
   </tr>
   <tr>
-    <td><code>react-loading-skeleton</code></td>
-    <td>Used it to show skeletons while fetching new data</td>
-  </tr>
-  <tr>
-    <td><code>react-outside-click-handler</code></td>
-    <td>Used it to close options list in select component when clicking outside</td>
-  </tr>
-  <tr>
-    <td><code>react-router-dom</code></td>
-    <td>Routing between pages</td>
-  </tr>
-  <tr>
-    <td><code>react-transition-group</code></td>
-    <td>Animates showing and hiding of options list</td>
-  </tr>
-  <tr>
-    <td><code>antd</code></td>
-    <td>Used 1 component from it : Image, that helps to open image in a full-screen mode</td>
-  </tr>
-  <tr>
-    <td><code>@tanstack/react-query</code>, <br><code>@tanstack/react-query-devtools</code></td>
-    <td>API requests</td>
-  </tr>
-  <tr>
-    <td><code>cypress</code></td>
-    <td>End-to-end testing</td>
-  </tr>
-  <tr>
-    <td><code>vitest</code></td>
-    <td>Unit testing</td>
+    <td><code>animejs</code></td>
+    <td>Library for animations</td>
   </tr>
 </table>
 
 ## 💡 Details
 
-Another project that seemed to be very simple, but took 2-3 weeks to complete
+Thought project is extremely simple I spent much time learning NextJS, AnimeJS.
+
+Btw, that's my first project on NextJS.
 
 Features
 
-- Light / Dark mode
-- Skeletons during load
-- Page for the list of countries, page for a country
-- Custom select, input fields
-- Used a component from Ant Design (but it looks like it made the bundle realy, really big)
-- Unit & e2e testing
-- CI/CD with Github Actions. Automatically lint, unit test, e2e test, build and deploy to Github Pages
+- NextJS!
+- Nice animations
+- Deployment to Vercel
 
 ## 🔗 Useful resources
 
+- [NextJS Foundations](https://nextjs.org/learn/foundations/about-nextjs) - Introduction to NextJS
+- [AnimeJS](https://animejs.com/) - AnimeJS Official documentation
 - [Web Dev Simplified Hooks Course](https://courses.webdevsimplified.com/view/courses/react-hooks-simplified/1411296-introduction/4376388-00-introduction) - Great course with a lot of custom hooks
-- [How to Make a Custom Select Component](https://codepen.io/tcomdev/pen/WNXeqoG)
-- [StackOverflow : Guide on a spinner](https://stackoverflow.com/questions/40987309/react-display-loading-screen-while-dom-is-rendering)
-- [How to Make a Custom Spinner](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader)
-- [How to deploy a react app on GH Pages](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/) - to put shortly, just use HashRouter in the application
-- [How to Make a Custom Scrollbar](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
-- [Github Actions - Введение в CI/CD](https://www.youtube.com/watch?v=e0A2hDObLmg) - Introduction to CI/CD with Github Actions, in Russian. Helped me to get understand the basics
 
 ## 👤 Author
 

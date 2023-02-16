@@ -18,4 +18,6 @@ const Button = forwardRef<any, ButtonProps>(({ children, dataAnime, initiallyInv
   );
 });
 
+Button.displayName = "Button";
+
 export default Button;
