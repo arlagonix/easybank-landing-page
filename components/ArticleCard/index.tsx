@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import * as SC from "./index.styled";
 import { forwardRef } from "react";
 
 type ArticleCardProps = {
   /** Path to the image file */
-  imageSrc: string;
+  imageSrc: string | StaticImageData;
   /** Description of the image, for accessibility */
   imageAlt: string;
   /** The article author */

@@ -2,19 +2,14 @@ import Image from "next/image";
 import Button from "../Button";
 import * as SC from "./index.styled";
 import { socialLinksData } from "../../data/linksData";
+import logoDark from "../../public/logo_dark.svg";
 
 export default function Footer() {
   return (
     <SC.FooterBackground>
       <SC.Footer>
         <SC.Wrapper>
-          <Image
-            src="/logo_dark.svg"
-            alt="Open home page"
-            width="139"
-            height="20"
-            draggable={false}
-          />
+          <Image src={logoDark} alt="Open home page" width="139" height="20" draggable={false} />
           <SC.SocialMediaIcons>
             {socialLinksData.map(({ href, src, alt }) => (
               <a href={href} key={href} draggable={false} style={{ userSelect: "none" }}>

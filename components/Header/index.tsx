@@ -7,6 +7,8 @@ import Button from "../Button";
 import useEventListener from "../../hooks/useEventListener";
 import anime from "animejs";
 
+import logo from "../../public/logo.svg";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isScrolledY, setIsScrolled] = useState<boolean>(false);
@@ -31,7 +33,7 @@ export default function Header() {
       <SC.Header>
         <a href="#" style={{ userSelect: "none" }} draggable={false} data-anime="nav-item">
           <Image
-            src="/logo.svg"
+            src={logo}
             alt="Open home page"
             width="139"
             height="20"
