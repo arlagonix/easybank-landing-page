@@ -1,16 +1,16 @@
-<h1 align="center">Where is the world</h1>
+<h1 align="center">Easy Bank Landing Page</h1>
 <p align="center">
-  Made with <code>HTML</code>, <code>CSS</code>, <code>TypeScript</code>, <code>ReactJS</code>, <code>styled-components</code>
+  Made with <code>HTML</code>, <code>CSS</code>, <code>TypeScript</code>, <code>ReactJS</code>, <code>NextJS</code>, <code>styled-components</code>
   <br>
-  Bootstrapped with <code>Vite</code>
+  Bootstrapped with <code>NextJS</code>
 </p>
 
 <p align="center">
-  <a href="../../actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/arlagonix/countries-list/main.yaml"></a>
-  <a href="../../commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arlagonix/countries-list"></a>
-  <a href="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/arlagonix/countries-list"></a>
-  <img src="https://badgen.net/github/dependabot/arlagonix/countries-list" />
-  <img src="https://img.shields.io/github/repo-size/arlagonix/countries-list" />
+  <a href="../../actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/arlagonix/easybank-landing-page/main.yaml"></a>
+  <a href="../../commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arlagonix/easybank-landing-page"></a>
+  <a href="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/arlagonix/easybank-landing-page"></a>
+  <img src="https://badgen.net/github/dependabot/arlagonix/easybank-landing-page" />
+  <img src="https://img.shields.io/github/repo-size/arlagonix/easybank-landing-page" />
 </p>
 
 <p align="center">
@@ -33,52 +33,23 @@
 ## 🖼 Screenshots
 
 <p align="center">
-  <img src="./docs/results/list_big_light.png" width="100%">
+  <img src="./docs/results/big.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./docs/results/list_big_dark.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./docs/results/list_partial_light.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./docs/results/list_partial_dark.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./docs/results/list_big_skeleton.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./docs/results/list_small_light.jpg" width="35%">
-  <img src="./docs/results/list_small_dark.jpg" width="35%">
-</p>
-
-<p align="center">
-  <img src="./docs/results/country_big_light.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./docs/results/country_big_dark.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./docs/results/country_small_light.png" width="35%">
-  <img src="./docs/results/country_small_dark.png" width="35%">
+  <img src="./docs/results/mobile_one.png" width="35%">
+  <img src="./docs/results/mobile_two.png" width="35%">
 </p>
 
 ## ℹ️ About
 
-This is a solution to the challenge "REST Countries" from Frontend Mentor ([link](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca/hub)).
+This is a solution to the challenge "Easy Bank Landing Page" from Frontend Mentor ([link](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN/hub)).
 
-The challenge is to integrate with the [REST Countries API](https://restcountries.com) to pull country data and display it like in the designs.
+The challenge is to build out the landing page and get it looking as close to the design as possible.
 
 I made my own Figma prototype and redesigned the whole application.
 
-Figma prototype: https://www.figma.com/file/9TUVcloltVpCdi5LHVCiVT/Countries
+Figma prototype: https://www.figma.com/file/tnMVDIPtXmz1Jl3LHMxhEX/Easy-Bank-Landing-Page?node-id=0%3A1&t=wQvBxKm7q40Sx9vg-0
 
 ## ⚙️ Tools
 
@@ -88,14 +59,11 @@ Figma prototype: https://www.figma.com/file/9TUVcloltVpCdi5LHVCiVT/Countries
   - styled-components
 - **TypeScript**
   - ReactJS
-  - React Query
-  - React Router
-  - Vitest
-  - Cypress
+  - NextJS
 - **NodeJS**
-- **Vite**
 - **Github Pages**
 - **Github Actions** for CI/CD
+- **Storybook**
 
 ## 🔨 Build project
 
