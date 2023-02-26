@@ -187,6 +187,7 @@ Features
 - [AnimeJS](https://animejs.com/) - AnimeJS official documentation
 - [Storybook](https://storybook.js.org/) - Storybook official documentation
 - [Web Dev Simplified Hooks Course](https://courses.webdevsimplified.com/view/courses/react-hooks-simplified/1411296-introduction/4376388-00-introduction) - Great course with a lot of custom hooks
+- [StyledComponents template for NextJS](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components) - Is very useful when you need to set up NextJS with Styled Components. I tried several approaches, only this one worked properly
 
 ## 👤 Author
 
