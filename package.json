@@ -24,7 +24,7 @@
     "@storybook/addon-essentials": "^7.0.9",
     "@storybook/addon-interactions": "^7.1.0",
     "@storybook/addon-links": "^7.1.0",
-    "@storybook/builder-webpack5": "^7.0.7",
+    "@storybook/builder-webpack5": "^7.4.1",
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^7.1.0",
     "@storybook/testing-library": "^0.1.0",
